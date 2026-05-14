@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Миколаївський ліцей №22 | Школа – наш дім</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        body {
+            background: #2a5298;
+        }
+
+        /* Навігація */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        /* Шапка сайту (Hero Section) */
+        header {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+
+        /* Контейнер для контенту */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Картки з ефектом скла */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 30px;
+            color: white;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+		
+		.wrapper {
+			display: flex;
+			justify-content: center;
+			margin: 20px;
+		}
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        /* Кнопка */
+        .btn {
+            background: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #2980b9;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Головна</a>
+        <a href="#about">Про ліцей</a>
+        <a href="#life">Життя 10-А</a>
+        <a href="#contacts">Контакти</a>
+    </nav>
+
+    <header id="home">
+        <h1>Ліцей №22</h1>
+        <p>Школа – наш дім, де народжується майбутнє!</p>
+        <a href="#about" class="btn">Дізнатися більше</a>
+    </header>
+
+    <div class="container">
+        
+        <section id="about" class="glass-card">
+            <h2 class="section-title">Про наш навчальний заклад</h2>
+            <p>Миколаївський ліцей №22 — це простір для розвитку талантів, інновацій та міцної дружби. Ми прагнемо не лише давати знання, а й створювати середовище, де кожен учень почувається як удома.</p>
+            
+            <div class="grid">
+                <div class="feature">
+                    <h3>💡 Інновації</h3>
+                    <p>Сучасне обладнання та новітні методики навчання.</p>
+                </div>
+                <div class="feature">
+                    <h3>🏆 Успіх</h3>
+                    <p>Наші випускники — студенти найкращих ВНЗ країни.</p>
+                </div>
+                <div class="feature">
+                    <h3>🤝 Родина</h3>
+                    <p>Підтримка вчителів та дружня атмосфера в кожному класі.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="life" class="glass-card">
+            <h2 class="section-title">Наше шкільне життя</h2>
+            <p>10-й клас — це особливий час. Ми вже не діти, але ще маємо можливість насолоджуватися шкільними роками. Наш ліцей у Миколаєві славиться своїми традиціями: від наукових конференцій до яскравих творчих вечорів.</p>
+            <div class="wrapper">
+                <img src="./school-life.jpg" alt="Шкільне життя" style="width:100%; border-radius:15px; margin-top:20px;" />
+            </div>
+        </section>
+
+        <section id="contacts" class="glass-card">
+            <h2 class="section-title">Зворотний зв'язок</h2>
+            <p>📍 Адреса: м. Миколаїв, Україна</p>
+            <p>📧 Email: info@lyceum22.mk.ua</p>
+            <p>📞 Телефон: (0512) 00-00-00</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Проєкт учнів 10 класу Ліцею №22. Створено з любов'ю.</p>
+    </footer>
+
+</body>
+</html>
